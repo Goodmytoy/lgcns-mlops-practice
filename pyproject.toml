@@ -1,0 +1,28 @@
+[project]
+name = "lgcns-mlops-practice"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Goodmytoy", email = "35749417+Goodmytoy@users.noreply.github.com"},
+]
+dependencies = [
+    "pandas==2.1.4",
+    "bentoml==1.2.6",
+]
+requires-python = "==3.9.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=24.3.0",
+    "matplotlib>=3.8.3",
+    "pre-commit>=3.7.0",
+    "isort>=5.13.2",
+    "mypy>=1.9.0",
+    "jupyter>=1.0.0",
+]
